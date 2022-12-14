@@ -1,7 +1,6 @@
 import './App.css';
 import {useEffect} from "react";
 import {useTelegram} from "./hooks/useTelegram";
-const tg = window.Telegram.WebApp;
 import Header from "./components/Header/Header";
 import {Route, Routes} from "react-router-dom";
 import ProductList from "./components/ProductList/ProductList";
@@ -18,8 +17,8 @@ function App() {
     <div className="App">
         <Header/>
         <Routes>
-            <Route index element={<ProductList/>}/>
-            <Route path={'form'} element={<Form/>}/>
+            <Route index element={<ProductList />}/>
+            <Route path={'form'} element={<Form  />}/>
         </Routes>
     </div>
   );

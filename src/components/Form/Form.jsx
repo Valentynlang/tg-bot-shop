@@ -38,7 +38,7 @@ const Form = () => {
     return (
         <div className={'form'}>
             <h3>Input your info</h3>
-            <input className={'input'} type="text" placeholder={'Co'} value={country} onChange={onChangeCountry}/>
+            <input className={'input'} type="text" placeholder={'Country'} value={country} onChange={onChangeCountry}/>
             <input className={'input'} type="text" placeholder={'Street'} value={street} onChange={onChangeStreet}/>
             <select value={subject} onChange={onChangeSubject} className={'select'}>
                 <option value={'physical'}>Physical</option>
